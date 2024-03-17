@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./numeros.component.css']
 })
 export class NumerosComponent {
+  titulo = 'Aplicación Calculadora';
   resultado = 0;
 
   operando: number = 0;
@@ -13,8 +14,6 @@ export class NumerosComponent {
 
   operar(){
     this.resultado = this.operando + this.operador;
-    this.operador=0;
-    this.operando=0;
   }
   
 }
